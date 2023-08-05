@@ -1,0 +1,70 @@
+import logo from '@/images/projects/spotify-clone/spotify-logo.webp'
+import imageHero from './hero.png'
+
+export const caseStudy = {
+  client: 'Spotify Clone',
+  title: 'Next-Gen Music Soundscape',
+  description:
+    'A full-fledged Spotify Clone demonstrating the power of modern web technologies. Experience a sleek and dynamic user interface, robust backend functionality, and a seamless payment system, all built from scratch.',
+  summary: [
+    'Revolutionary Full Stack Spotify Clone',
+    'Architected using Next.js, React, Tailwind CSS, Supabase, PostgreSQL, and Stripe for an immersive music listening experience',
+    'Experience enhanced features such as Song Upload, Stripe Integration, Database Handling, Sleek UI, Responsiveness, Secure Authentication, File/Image Upload, Form Validation, Error Handling, Audio Playback, Favorites System, Playlists/Liked Songs System, and more.',
+    'Efficient data fetching in server React components by directly accessing the database',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-06',
+  service: 'Music Player',
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Project`,
+  description: caseStudy.description,
+}
+
+<h1 className="text-3xl font-bold">Overview</h1>
+
+<p className="py-6 text-lg">
+  Built with Next.js and React, the application ensures a seamless, single-page
+  experience. It features a sleek and responsive interface, crafted using
+  Tailwind CSS, to emulate the acclaimed UI of Spotify. The interface is fully
+  responsive, providing compatibility across all devices.
+</p>
+<p className="pb-6 text-lg">
+  For authentication, the application utilizes Supabase, a modern alternative to
+  Firebase. Supabase enables secure user registration and login processes,
+  including OAuth via Github. Additionally, it offers powerful database
+  management capabilities, allowing the creation of schemas and data
+  manipulation using PostgreSQL.
+</p>
+<p className="pb-6 text-lg">
+  The application also integrates with Stripe, enabling premium subscriptions
+  within the platform. It handles recurring payments, subscription management,
+  and service cancellations efficiently.
+</p>
+<p className="pb-6 text-lg">
+  Key features include efficient song upload management, creation and management
+  of playlists, favoriting songs, and an interactive music player. Supabase
+  storage supports file and image uploads, while react-hook-form and react-toast
+  handle form validation and error handling.
+</p>
+<p className="pb-6 text-lg">
+  Data fetching in server React components directly accesses the database,
+  eliminating the need for an API. The project also demonstrates route handling
+  for POST, GET, and DELETE requests, and manages relations between Server and
+  Child components in real-time environments.
+</p>
+
+<h2 className="pt-6 text-2xl font-bold">Technologies Used</h2>
+
+<TagList>
+  <TagListItem>Stripe Checkout</TagListItem>
+  <TagListItem>Supabase</TagListItem>
+  <TagListItem>React.js</TagListItem>
+  <TagListItem>Next.js</TagListItem>
+  <TagListItem>Tailwind CSS</TagListItem>
+  <TagListItem>PostgreSQL</TagListItem>
+  <TagListItem>React Hook Form</TagListItem>
+  <TagListItem>React Toast</TagListItem>
+</TagList>

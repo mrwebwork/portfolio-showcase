@@ -1,0 +1,70 @@
+import logo from '@/images/projects/meta-messenger/meta-logo.webp'
+import imageHero from './hero.png'
+
+import Link from 'next/link'
+import { Button } from '@/components/Button'
+
+export const caseStudy = {
+  client: 'Meta Messenger',
+  title: 'Seamless Communication Redefined',
+  description:
+    'An innovative approach to messaging, re-architectured with Next.js, React.js, TypeScript, and Prisma for a seamless and intuitive communication experience.',
+  summary: [
+    'Revolutionized Full Stack Messenger Clone',
+    'Engineered using Next.js, React.js, Tailwind, NextAuth, Prisma, MongoDB, Pusher, and Cloudinary for an enriched user experience.',
+    'The application prioritizes user security, implementing NextAuth for a multi-strategy authentication process, including Google and GitHub options.',
+    'Built on the solid foundations of Next.js and React.js, the clone offers excellent responsiveness and scalability, capable of handling high user volumes and diverse user interactions.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-07',
+  service: 'Chabot',
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Project`,
+  description: caseStudy.description,
+}
+
+<h1 className="text-3xl font-bold">Overview</h1>
+
+<p className="py-6 text-lg">
+  The Meta Messenger Clone is a robust, real-time messaging application
+  developed using advanced web technologies to mirror Meta Messenger's
+  functionality and user experience.
+</p>
+<p className="pb-6 text-lg">
+  The core feature, Real-Time Messaging, is powered by Pusher, providing instant
+  communication that enhances the app's interactivity. Tailwind CSS furnishes
+  the User Interface, offering an intuitive and clean design reminiscent of the
+  original Messenger app.
+</p>
+<p className="pb-6 text-lg">
+  Security is prioritized with NextAuth, enabling safe Authentication via Google
+  and Github. Cloudinary CDN handles File/Image uploads, demonstrating robust
+  media management. User inputs are streamlined with react-hook-form for
+  efficient form validation, while react-toast addresses server errors to
+  maintain a smooth user experience.
+</p>
+<p className="pb-6 text-lg">
+  This project encapsulates a comprehensive approach to developing a sleek,
+  secure, and highly interactive messaging application.
+</p>
+
+<h2 className="text-2xl font-bold">Technologies Used</h2>
+
+<TagList>
+  <TagListItem>NextJS</TagListItem>
+  <TagListItem>ReactJS</TagListItem>
+  <TagListItem>TypeScript</TagListItem>
+  <TagListItem>Pusher</TagListItem>
+  <TagListItem>NextAuth</TagListItem>
+  <TagListItem>Cloudinary</TagListItem>
+  <TagListItem>React Hook Form</TagListItem>
+  <TagListItem>React Toast</TagListItem>
+</TagList>
+
+<div className="flex w-[80%] justify-between pt-10 sm:w-[40%]">
+  <Button href="https://github.com/mrwebwork/messenger">View Code</Button>
+  <Button href="https://messenger-six-nu.vercel.app/">Chat Now</Button>
+</div>

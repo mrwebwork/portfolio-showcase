@@ -1,0 +1,88 @@
+import logo from '@/images/projects/firebase-auth/firebase-auth-logo.webp'
+import imageHero from './hero.png'
+
+import Link from 'next/link'
+import { Button } from '@/components/Button'
+
+export const caseStudy = {
+  client: 'Firebase Auth Guide',
+  title: 'Authentication using Firebase with Next.js',
+  description:
+    'This guide outlines Firebase Authentication in a Next.js app. It employs email/password setup and error handling with React Hot Toast, resulting in secure user authentication deployed on Firebase Hosting.',
+  summary: [
+    'Revolutionized Full Stack Messenger Clone',
+    'Engineered using Next.js, React.js, Tailwind, NextAuth, Prisma, MongoDB, Pusher, and Cloudinary for an enriched user experience.',
+    'The application prioritizes user security, implementing NextAuth for a multi-strategy authentication process, including Google and GitHub options.',
+    'Built on the solid foundations of Next.js and React.js, the clone offers excellent responsiveness and scalability, capable of handling high user volumes and diverse user interactions.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-07',
+  service: 'Tutorial',
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Project`,
+  description: caseStudy.description,
+}
+
+<h1 className="text-3xl font-bold">Overview</h1>
+
+<p className="py-6 text-lg">
+  <span className="font-bold">Project Setup:</span> Start with setting up the
+  Next.js application and configuring it for usage with Tailwind CSS and ESLint.
+  The project is then updated, and the development server is started to ensure
+  everything works as intended.
+</p>
+<p className="pb-6 text-lg">
+  <span className="font-bold">Firebase Authentication:</span> Learn how to
+  create a Firebase project and set up Firebase Authentication. This detailed
+  walkthrough includes instructions on enabling email and password
+  authentication methods in the Firebase console.
+</p>
+<p className="pb-6 text-lg">
+  <span className="font-bold">Integration with Next.js:</span> Discover how to
+  integrate Firebase with your Next.js application. This involves adding the
+  Firebase SDK and configuring Firebase using the provided Firebase
+  configuration.
+</p>
+<p className="pb-6 text-lg">
+  <span className="font-bold">React Hot Toast for Error Handling:</span> Explore
+  the installation and usage of React Hot Toast, a popular library for
+  displaying notifications in a React app. It will help you effectively handle
+  and display errors during the authentication process.
+</p>
+<p className="pb-6 text-lg">
+  <span className="font-bold">Protected Routes:</span> Ensure that only
+  authenticated users can access specific pages by creating protected routes.
+  This tutorial guides you through the process using the React Context API to
+  share the authentication state globally within the app.
+</p>
+<p className="pb-6 text-lg">
+  <span className="font-bold">Form Controls Component:</span> Manage the form
+  layout of sign-up and sign-in pages with a custom Form Controls Component.
+</p>
+<p className="pb-6 text-lg">
+  <span className="font-bold">Sign-Up and Sign-In Pages: </span> Conclude the
+  tutorial with a detailed, step-by-step guide on creating and configuring
+  sign-up and sign-in pages.
+</p>
+
+<h2 className="text-2xl font-bold">Technologies Used</h2>
+
+<TagList>
+  <TagListItem>NextJS</TagListItem>
+  <TagListItem>ReactJS</TagListItem>
+  <TagListItem>Firebase</TagListItem>
+  <TagListItem>React Toast</TagListItem>
+  <TagListItem>Tailwind CSS</TagListItem>
+</TagList>
+
+<div className="flex w-[80%] justify-between pt-10 sm:w-[40%]">
+  <Button href="https://github.com/mrwebwork/nextjs-firebase-auth-guide">
+    View Code
+  </Button>
+  <Button href="https://nextjs-firebase-auth-guide.web.app/">
+    Register Now
+  </Button>
+</div>
