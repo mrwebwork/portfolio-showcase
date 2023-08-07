@@ -93,7 +93,7 @@ function Skills() {
             <ListItem title="JavaScript & TypeScript">
               I've been able to create dynamic projects, including a{' '}
               <Link
-                className="font-bold"
+                className="font-semibold text-neutral-950"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://messenger-six-nu.vercel.app/"
@@ -102,7 +102,7 @@ function Skills() {
               </Link>{' '}
               and a{' '}
               <Link
-                className="font-bold"
+                className="font-semibold text-neutral-950"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://spotify-sigma-six.vercel.app/"
@@ -118,9 +118,12 @@ function Skills() {
             </ListItem>
             <ListItem title="React.js & Next.js">
               I specialize in crafting innovative and responsive designs at
-              Giddy. My expertise lies in utilizing React.js, which elevates the
-              user interface and experience. Recently, I worked on an exciting
-              project where I integrated{' '}
+              Giddy. My expertise lies in utilizing{' '}
+              <strong className="font-semibold text-neutral-950">
+                React.js
+              </strong>{' '}
+              , which elevates the user interface and experience. Recently, I
+              worked on an exciting project where I integrated{' '}
               <strong className="font-semibold text-neutral-950">
                 Next.js
               </strong>{' '}
