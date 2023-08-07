@@ -19,7 +19,7 @@ const clients = [
   ['Frontline Optics', 'https://frontline-optics.com/'],
   ['Together Beverages', 'https://togetherbeverages.com/'],
   ['TŌNEM', 'https://puretonetherapy.com/'],
-  ['Luxsone', 'https://luxsone.com/'],
+  // ['Luxsone', 'https://luxsone.com/'],
   ['UHRD Music', 'https://uhrdshop.com/'],
   ['VNC Sales & Marketing', 'https://vncsales.com/'],
 ]
@@ -227,8 +227,7 @@ function CaseStudies({ caseStudies }) {
 
 export const metadata = {
   title: 'Allan Hillman',
-  description:
-    'We are developer studio working at the intersection of design and technology.',
+  description: 'I am a web developer.',
 }
 
 export default async function Home() {
