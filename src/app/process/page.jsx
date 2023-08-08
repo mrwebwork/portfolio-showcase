@@ -239,7 +239,7 @@ export default function Process() {
     <>
       <PageIntro
         eyebrow="Approaching My Work"
-        title="My Steps to Success with Clients"
+        title="Steps to Success with Clients"
       >
         <p>
           Let's take a deep dive into how I execute web development projects.
