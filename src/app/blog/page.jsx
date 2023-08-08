@@ -22,8 +22,8 @@ export default async function Blog() {
     <>
       <PageIntro eyebrow="Blog" title="Exploring the Future of Web Development">
         <p>
-          {/* Discover cutting-edge techniques and emerging trends in web
-          development through engaging and informative articles. */}
+          Discover cutting-edge techniques and emerging trends in web
+          development through engaging and informative articles.
         </p>
       </PageIntro>
 
