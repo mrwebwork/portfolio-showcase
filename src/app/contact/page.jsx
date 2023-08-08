@@ -48,9 +48,10 @@ function ContactForm() {
             required
           />
           <TextInput
+            type="text"
             label="Company"
             name="company"
-            autoComplete="organization"
+            autoComplete="company"
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" required />

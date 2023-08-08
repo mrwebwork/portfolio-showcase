@@ -23,10 +23,9 @@ import { GridPattern } from '@/components/GridPattern'
 // import { Logo, Logomark } from "@/components/Logo";
 import { SocialMedia } from '@/components/SocialMedia'
 
-const RootLayoutContext = createContext({})
+const pdfResume = '/Allan_Hillman_Resume.pdf'
 
-const resumeLink =
-  'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:81ec5f37-742d-40a7-9ef3-69b54d7ed17b'
+const RootLayoutContext = createContext({})
 
 function XIcon(props) {
   return (
@@ -145,7 +144,7 @@ function Navigation() {
         <NavigationItem href="/process">My Process</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href={resumeLink}>Resume</NavigationItem>
+        <NavigationItem href={pdfResume}>Resume</NavigationItem>
         <NavigationItem href="/contact">Contact Me</NavigationItem>
       </NavigationRow>
     </nav>
