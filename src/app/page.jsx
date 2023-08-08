@@ -93,7 +93,7 @@ function Skills() {
             <ListItem title="JavaScript & TypeScript">
               I've been able to create dynamic projects, including a{' '}
               <Link
-                className="font-semibold text-purple-300 hover:text-purple-400"
+                className="font-semibold text-blue hover:text-cyan"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://messenger-six-nu.vercel.app/"
@@ -102,7 +102,7 @@ function Skills() {
               </Link>{' '}
               and a{' '}
               <Link
-                className="font-semibold text-purple-300 hover:text-purple-400"
+                className="font-semibold text-blue hover:text-cyan"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://spotify-sigma-six.vercel.app/"
