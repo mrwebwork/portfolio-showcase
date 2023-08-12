@@ -100,26 +100,26 @@ export const metadata = {
     'Connect with Allan Hillman for your web development needs, or just to say hi!',
 }
 
-const widthContactIntro = (ContactHeader, customClasses) => {
-  return (props) => {
-    const overwriteClasses = customClasses
-      ?.split(' ')
-      .map((c) => `!${c}`)
-      .join(' ')
-    const className = `${props.className} ${overwriteClasses}`
-    let updatedProps = { ...props, className }
-    updatedProps.contactHeaderClass = 'mt-[5px]'
-    return <ContactHeader {...updatedProps}>{props.children}</ContactHeader>
-  }
-}
+// const widthContactIntro = (ContactHeader, customClasses) => {
+//   return (props) => {
+//     const overwriteClasses = customClasses
+//       ?.split(' ')
+//       .map((c) => `!${c}`)
+//       .join(' ')
+//     const className = `${props.className} ${overwriteClasses}`
+//     let updatedProps = { ...props, className }
+//     updatedProps.contactHeaderClass = 'mt-[5px]'
+//     return <ContactHeader {...updatedProps}>{props.children}</ContactHeader>
+//   }
+// }
 
 export default function Contact() {
-  const Contact = widthContactIntro(PageIntro, 'mt-0')
+  // const Contact = widthContactIntro(PageIntro, 'mt-0')
   return (
     <>
-      <Contact eyebrow="Contact Me" title="Start The Conversation">
+      <PageIntro eyebrow="Contact Me" title="Start The Conversation">
         <p>Looking forward to crafting your unique web experience.</p>
-      </Contact>
+      </PageIntro>
 
       <Container className="mt-24 sm:mt-32">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
