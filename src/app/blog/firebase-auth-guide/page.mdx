@@ -4,7 +4,7 @@ export const article = {
   date: '2023-08-05',
   title: 'Next.js & Firebase Authentication Guide',
   description:
-    'Let’s explore the latest trends in web development, and regurgitate some predictions we read on Twitter for how they will shape the industry in the coming year.',
+    'Discover how to create powerful web applications using Next.js and Firebase. Learn to set up authentication, create secure pages, and handle errors like a pro with React Hot Toast. ',
   author: {
     name: 'Allan Hillman',
     role: 'Front-End Engineer',
@@ -17,8 +17,96 @@ export const metadata = {
   description: article.description,
 }
 
-## 1. Connecting Firebase to Application
+<h1 className="text-2xl font-bold xl:text-3xl xl:text-3xl">
+  Prerequisites and Project Setup
+</h1>
+<br />
+<p className="text-xl">
+  Before diving in, ensure Node.js is installed on your local machine. This can
+  be downloaded from the Node.js official website. Once installed, we'll begin
+  by setting up a new Next.js app using the npx create-next-app@latest command
+  in your terminal. Follow the setup prompts, opting for the App recommended
+  option and not the src folder option.
+</p>
+![](./next-code.jpg)
+<p className="text-xl">
+  Next, install Tailwind CSS, ESLint, and then run npm update to keep everything
+  up-to-date. Once all installations are complete, kickstart your development
+  server with npm run dev, ensuring to use nvm use v18 for the correct Node
+  version.
+</p>
+<br />
+<p className="text-xl">
+  Note: Always remember to shut down the server when installing packages to
+  avoid any errors.
+</p>
 
-## 2. Setting up Next.js Application
+<br />
 
-## 3. Create Authentication
+<h1 className="text-2xl font-bold xl:text-3xl">
+  Project Configuration: Cleaning and Coding
+</h1>
+<br />
+<p className="text-xl">
+  Our project will need some tweaking to fit our needs. This involves removing
+  certain files and code sections, followed by adding some. For instance, you
+  will need to clear out the main tag element in the page.js file and add a div
+  and a h1 with a title of your choice.
+</p>
+![](./code-editor.jpg)
+
+<p className="text-xl">
+  In addition, you will need to add certain codes, and add all the btn classes
+  to the global.css file. Always remember to update the metadata in layout.js
+  with your own information.
+</p>
+<br />
+
+<h1 className="text-2xl font-bold xl:text-3xl">
+  Setting up Firebase in Next.js
+</h1>
+<br />
+<p className="text-xl">
+  Here's where it gets even more exciting! Firebase, a Backend-as-a-Service,
+  offers services like authentication, database, storage, and hosting. For our
+  project, we'll focus on authentication and database.
+</p>
+<br />
+<p className="text-xl">
+  After creating a new project on Firebase Console, we'll enable Firebase
+  Hosting and install the Firebase SDK in our CLI using npm install firebase.
+  The process involves setting up Firebase in our Next.js app using a
+  firebaseConfig object, and deploying the app to Firebase Hosting.
+</p>
+
+<br />
+<h1 className="text-2xl font-bold xl:text-3xl">
+  Setting up Firebase Authentication & Creating Protected Pages
+</h1>
+<br />
+<p className="text-xl">
+  Firebase Authentication allows users to sign up using their email and
+  password. The onAuthStateChanged() function allows us to create protected
+  pages that are only accessible to logged-in users. By utilizing the React
+  Context API, we can share state with other components, allowing us to create
+  an efficient authentication process.
+</p>
+![](./success.jpg)
+<br />
+<h1 className="text-2xl font-bold xl:text-3xl">
+  Optional: Success & Error Handling with React Hot Toast
+</h1>
+<br />
+<p className="text-xl">
+  To wrap it up, we'll install React Hot Toast which allows us to display
+  notifications seamlessly in our React app. This tool is instrumental in
+  handling success and error messages and helps improve the overall user
+  experience.
+</p>
+<br />
+<p className="text-xl">
+  By following these steps, you're well on your way to setting up a full-stack
+  app using Next.js and Firebase. This tutorial should equip you with the
+  fundamental skills needed to create a robust and efficient web application.
+  Happy coding!
+</p>

@@ -51,10 +51,7 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro
-        eyebrow="Meet Allan Hillman"
-        title="My strength is collaboration"
-      >
+      <PageIntro eyebrow="About me" title="My strength is collaboration">
         <p>
           Working in synergy with cross-functional teams has always enabled me
           to achieve the best results.

@@ -48,9 +48,10 @@ function ContactForm() {
             required
           />
           <TextInput
+            type="text"
             label="Company"
             name="company"
-            autoComplete="organization"
+            autoComplete="company"
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" required />
@@ -72,23 +73,15 @@ function ContactDetails() {
         </h2>
         {/* TODO Fix this */}
         {/* *infinite loop* */}
-        {/* <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[
-            ['Careers', 'tech@allanswebwork.info']
-          ].map(([label, email]) => (
+        <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
+          {[['tech@allanswebwork.info']].map(([email]) => (
             <div key={email}>
-              <dt className="font-semibold text-neutral-950">{label}</dt>
               <dd>
-                <Link
-                  href={`mailto:${email}`}
-                  className="text-neutral-600 hover:text-neutral-950"
-                >
-                  {email}
-                </Link>
+                <h1 className="text-neutral-60">{email}</h1>
               </dd>
             </div>
           ))}
-        </dl> */}
+        </dl>
       </Border>
 
       <Border className="mt-16 pt-16">
@@ -130,7 +123,7 @@ export default function Contact() {
 
       <Container className="mt-24 sm:mt-32">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-          <ContactForm />
+          {/* <ContactForm /> */}
           <ContactDetails />
         </div>
       </Container>

@@ -19,7 +19,7 @@ const clients = [
   ['Frontline Optics', 'https://frontline-optics.com/'],
   ['Together Beverages', 'https://togetherbeverages.com/'],
   ['TŌNEM', 'https://puretonetherapy.com/'],
-  ['Luxsone', 'https://luxsone.com/'],
+  // ['Luxsone', 'https://luxsone.com/'],
   ['UHRD Music', 'https://uhrdshop.com/'],
   ['VNC Sales & Marketing', 'https://vncsales.com/'],
 ]
@@ -44,6 +44,7 @@ function Clients() {
               <li key={client}>
                 <FadeIn>
                   <Link
+                    key={client}
                     rel="noopener noreferrer"
                     target="_blank"
                     href={url}
@@ -93,7 +94,7 @@ function Skills() {
             <ListItem title="JavaScript & TypeScript">
               I've been able to create dynamic projects, including a{' '}
               <Link
-                className="font-bold"
+                className="font-semibold text-blue hover:text-cyan"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://messenger-six-nu.vercel.app/"
@@ -102,7 +103,7 @@ function Skills() {
               </Link>{' '}
               and a{' '}
               <Link
-                className="font-bold"
+                className="font-semibold text-blue hover:text-cyan"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://spotify-sigma-six.vercel.app/"
@@ -117,10 +118,13 @@ function Skills() {
               third-party capabilities.
             </ListItem>
             <ListItem title="React.js & Next.js">
-              I specialize in crafting innovative and responsive designs at
-              Giddy. My expertise lies in utilizing React.js, which elevates the
-              user interface and experience. Recently, I worked on an exciting
-              project where I integrated{' '}
+              I specialize in crafting innovative and responsive designs. My
+              expertise lies in utilizing{' '}
+              <strong className="font-semibold text-neutral-950">
+                React.js
+              </strong>{' '}
+              , which elevates the user interface and experience. Recently, I
+              worked on an exciting project where I integrated{' '}
               <strong className="font-semibold text-neutral-950">
                 Next.js
               </strong>{' '}
@@ -146,7 +150,7 @@ function Skills() {
               overall user interface and experience, resulting in increased
               conversions.
             </ListItem>
-            <ListItem title="Tailwind">
+            <ListItem title="Tailwind CSS">
               I have successfully used Tailwind to improve e-commerce
               performance and reduce website bounce rates by creating{' '}
               <strong className="font-semibold text-neutral-950">
@@ -223,9 +227,8 @@ function CaseStudies({ caseStudies }) {
 }
 
 export const metadata = {
-  title: 'Allan Hillman',
-  description:
-    'We are developer studio working at the intersection of design and technology.',
+  title: 'Allan Hillman - Front-End Engineer',
+  description: 'I am a front-end engineer.',
 }
 
 export default async function Home() {
