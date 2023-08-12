@@ -132,21 +132,33 @@ function NavigationItem({ href, children }) {
   )
 }
 
+const navigationItems = [
+  [
+    { label: 'My Projects', href: '/work' },
+    { label: 'About Me', href: '/about' },
+  ],
+  [
+    { label: 'Blogs', href: '/blog' },
+    { label: 'My Process', href: '/process' },
+  ],
+  [
+    { label: 'Resume', href: pdfResume },
+    { label: 'Contact Me', href: '/contact' },
+  ],
+]
+
 function Navigation() {
   return (
     <nav className="font-display mt-px text-5xl font-medium tracking-tight text-white">
-      <NavigationRow>
-        <NavigationItem href="/work">My Projects</NavigationItem>
-        <NavigationItem href="/about">About Me</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/blog">Blogs</NavigationItem>
-        <NavigationItem href="/process">My Process</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href={pdfResume}>Resume</NavigationItem>
-        <NavigationItem href="/contact">Contact Me</NavigationItem>
-      </NavigationRow>
+      {navigationItems.map((row, rowIndex) => (
+        <NavigationRow key={`nav-row-${rowIndex}`}>
+          {row.map((item) => (
+            <NavigationItem key={item.href} href={item.href}>
+              {item.label}
+            </NavigationItem>
+          ))}
+        </NavigationRow>
+      ))}
     </nav>
   )
 }
