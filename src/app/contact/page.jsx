@@ -57,7 +57,7 @@ function ContactForm() {
           <TextInput label="Message" name="message" required />
         </div>
         <Button type="submit" className="mt-10 bg-blue">
-          Let's Begin
+          Let&apos;s Begin
         </Button>
       </form>
     </FadeIn>

@@ -75,8 +75,8 @@ function Skills() {
           My strengths include front-end development with a focus on responsive
           and interactive designs. I strive to stay on top of the latest trends
           and advancements in web development to deliver innovative and
-          efficient solutions. Below, you'll find a list of my core technical
-          skills.
+          efficient solutions. Below, you&apos;ll find a list of my core
+          technical skills.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -92,7 +92,7 @@ function Skills() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="JavaScript & TypeScript">
-              I've been able to create dynamic projects, including a{' '}
+              I&apos;ve been able to create dynamic projects, including a{' '}
               <Link
                 className="font-semibold text-blue hover:text-cyan"
                 target="_blank"
@@ -113,8 +113,8 @@ function Skills() {
               </Link>
               . To ensure high-quality development standards, I review Pull
               Requests and use debugging techniques to resolve any potential
-              code issues. Furthermore, I've expanded the functionality of my
-              applications by integrating ChatGPT and Shopify APIs to enhance
+              code issues. Furthermore, I&apos;ve expanded the functionality of
+              my applications by integrating ChatGPT and Shopify APIs to enhance
               third-party capabilities.
             </ListItem>
             <ListItem title="React.js & Next.js">
@@ -138,17 +138,17 @@ function Skills() {
               significantly enhanced the interactivity of the site.
             </ListItem>
             <ListItem title="Shopify Plus">
-              Over the past 5 years, I've had the pleasure of working with
+              Over the past 5 years, I&apos;ve had the pleasure of working with
               numerous clients and building over 100 Shopify stores. One of my
               standout accomplishments was successfully{' '}
               <strong className="font-semibold text-neutral-950">
                 leading a migration
               </strong>{' '}
               from BigCommerce to Shopify Plus for a client with an annual
-              revenue of over $6 million dollars. Additionally, I've developed
-              custom sections, snippets, themes, and pages that improve the
-              overall user interface and experience, resulting in increased
-              conversions.
+              revenue of over $6 million dollars. Additionally, I&apos;ve
+              developed custom sections, snippets, themes, and pages that
+              improve the overall user interface and experience, resulting in
+              increased conversions.
             </ListItem>
             <ListItem title="Tailwind CSS">
               I have successfully used Tailwind to improve e-commerce
@@ -244,10 +244,10 @@ export default async function Home() {
           <p className="mt-6 text-xl text-neutral-600">
             Web development is not just my profession
             <span className="hidden md:inline-block">—</span>
-            <span className="md:hidden">, </span>it's my passion. The thrill of
-            learning new technologies, coupled with my ability to collaborate
-            effectively, fuels my drive to create dynamic, user-friendly web
-            experiences.
+            <span className="md:hidden">, </span>it&apos;s my passion. The
+            thrill of learning new technologies, coupled with my ability to
+            collaborate effectively, fuels my drive to create dynamic,
+            user-friendly web experiences.
           </p>
         </FadeIn>
       </Container>

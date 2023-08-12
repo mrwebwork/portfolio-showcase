@@ -14,8 +14,8 @@ export default function NotFound() {
           Page not found
         </h1>
         <p className="text-md mt-2 text-neutral-600">
-          Uh-oh! Looks like the page you're looking for decided to go on
-          vacation.
+          Uh&mdash;oh! Looks like the page you&apos;re looking for decided to go
+          on vacation.
         </p>
         <Link
           href="/"
