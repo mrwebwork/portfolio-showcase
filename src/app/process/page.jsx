@@ -197,7 +197,7 @@ function Values() {
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Loyal">
-            My relationship with clients doesn't end at delivery. I aim to
+            My relationship with clients doesn&apos;t end at delivery. I aim to
             establish long-term partnerships that extend beyond just business.
           </GridListItem>
           <GridListItem title="Innovative">
@@ -242,7 +242,8 @@ export default function Process() {
         title="Steps to Success with Clients"
       >
         <p>
-          Let's take a deep dive into how I execute web development projects.
+          Let&apos;s take a deep dive into how I execute web development
+          projects.
         </p>
       </PageIntro>
 
