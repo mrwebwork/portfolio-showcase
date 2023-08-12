@@ -228,7 +228,8 @@ function CaseStudies({ caseStudies }) {
 
 export const metadata = {
   title: 'Allan Hillman - Front-End Engineer',
-  description: 'I am a front-end engineer.',
+  description:
+    'As a passionate freelance web developer and team leader in Austin, TX, I specialize in creating intuitive web designs that transform ideas into engaging and interactive web experiences. Let me bring your vision to life with my expertise in code and design.',
 }
 
 export default async function Home() {
