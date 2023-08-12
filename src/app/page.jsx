@@ -44,6 +44,7 @@ function Clients() {
               <li key={client}>
                 <FadeIn>
                   <Link
+                    key={client}
                     rel="noopener noreferrer"
                     target="_blank"
                     href={url}
