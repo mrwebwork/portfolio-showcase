@@ -204,7 +204,7 @@ function Values() {
             Staying ahead of the curve, constantly integrating emerging
             technologies and trends into my projects.
           </GridListItem>
-          <GridListItem title="Honesty">
+          <GridListItem title="Honest">
             Transparency is key in all my processes. I ensure you are fully
             aware and informed every step of the way.
           </GridListItem>
