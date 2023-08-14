@@ -12,9 +12,30 @@ export default async function CaseStudyLayout({ children, _segments }) {
   let id = _segments.at(-2)
   let allCaseStudies = await loadMDXMetadata('work')
   let caseStudy = allCaseStudies.find((caseStudy) => caseStudy.id === id)
+  // Add a fallback in case the case study doesn't exist
+  if (!caseStudy) {
+    return (
+      <Container>
+        <PageIntro
+          eyebrow="Projects"
+          title="Project not found"
+          centered
+          className="mt-24 sm:mt-32 lg:mt-40"
+        />
+        <p className="mt-8 text-center">
+          <Link href="/work">
+            <a className="text-primary-500 hover:text-primary-600">
+              View all projects
+            </a>
+          </Link>
+        </p>
+      </Container>
+    )
+  }
+  // Get the next 3 case studies
   let moreCaseStudies = allCaseStudies
     .filter((caseStudy) => caseStudy.id !== id)
-    .slice(0, 2)
+    .slice(0, 3)
 
   return (
     <>
