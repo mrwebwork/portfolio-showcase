@@ -4,13 +4,6 @@ Discover how my innovative approach to front-end development can elevate your on
 
 ---
 
-### Table of Contents
-
-1. [Working with Clients](#working-with-clients)
-2. [Projects](#projects)
-3. [Blog](#blog)
-4. [Contact](#contact)
-
 <details>
 <summary><a name="working-with-clients"></a>🤝 Working with Clients</summary>
 
