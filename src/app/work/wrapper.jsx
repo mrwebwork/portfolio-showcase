@@ -12,9 +12,10 @@ export default async function CaseStudyLayout({ children, _segments }) {
   let id = _segments.at(-2)
   let allCaseStudies = await loadMDXMetadata('work')
   let caseStudy = allCaseStudies.find((caseStudy) => caseStudy.id === id)
+  // Get the next 3 case studies
   let moreCaseStudies = allCaseStudies
     .filter((caseStudy) => caseStudy.id !== id)
-    .slice(0, 2)
+    .slice(0, 3)
 
   return (
     <>
