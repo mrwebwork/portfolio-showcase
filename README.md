@@ -6,7 +6,7 @@ Discover how my innovative approach to front-end development can elevate your on
 
 <details>
 <summary><a name="working-with-clients"></a>🤝 Working with Clients</summary>
-<br/>
+
 - **Innovative**: Staying ahead of the curve, constantly integrating emerging technologies and trends into my projects.
 - **Efficient**: Respecting your time and resources, always ensuring to meet deadlines without compromising the quality of work.
 - **Adaptable**: Your unique needs are my primary focus. I thrive on challenges, skillfully tailoring solutions to fit your specific business requirements.
