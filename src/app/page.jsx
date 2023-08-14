@@ -170,7 +170,7 @@ function Skills() {
             </ListItem>
           </List>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="mt-10 flex flex-col items-center">
           <Link
             href="/process"
             className="mt-5 w-5/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan sm:w-3/6 md:w-2/6 xl:w-1/6"
