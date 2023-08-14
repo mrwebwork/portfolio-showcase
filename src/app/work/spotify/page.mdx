@@ -1,6 +1,8 @@
 import logo from '@/images/projects/spotify-clone/spotify-logo.webp'
 import imageHero from './hero.png'
 
+import Link from 'next/link'
+
 export const caseStudy = {
   client: 'Spotify Clone',
   title: 'Next-Gen Music Soundscape',
@@ -68,3 +70,22 @@ export const metadata = {
   <TagListItem>React Hook Form</TagListItem>
   <TagListItem>React Toast</TagListItem>
 </TagList>
+
+<div className="flex flex-col items-center">
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://spotify-sigma-six.vercel.app/"
+    className="mt-5 w-5/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan md:w-3/6"
+  >
+    Listen Now
+  </Link>
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://github.com/mrwebwork/spotify"
+    className="mt-5 w-5/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan md:w-3/6"
+  >
+    View Code
+  </Link>
+</div>

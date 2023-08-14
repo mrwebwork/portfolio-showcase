@@ -8,6 +8,7 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import { StatList, StatListItem } from '@/components/StatList'
+import { Button } from '@/components/Button'
 
 import imageCoder from '@/images/home/coder.jpg'
 
@@ -94,7 +95,7 @@ function Skills() {
             <ListItem title="JavaScript & TypeScript">
               I&apos;ve been able to create dynamic projects, including a{' '}
               <Link
-                className="font-semibold text-blue hover:text-cyan"
+                className="font-semibold text-blue underline underline-offset-4 hover:text-cyan"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://messenger-six-nu.vercel.app/"
@@ -103,7 +104,7 @@ function Skills() {
               </Link>{' '}
               and a{' '}
               <Link
-                className="font-semibold text-blue hover:text-cyan"
+                className="font-semibold text-blue underline underline-offset-4 hover:text-cyan"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://spotify-sigma-six.vercel.app/"
@@ -145,10 +146,13 @@ function Skills() {
                 leading a migration
               </strong>{' '}
               from BigCommerce to Shopify Plus for a client with an annual
-              revenue of over $6 million dollars. Additionally, I&apos;ve
-              developed custom sections, snippets, themes, and pages that
-              improve the overall user interface and experience, resulting in
-              increased conversions.
+              revenue of over{' '}
+              <strong className="font-semibold text-neutral-950">
+                $6 million
+              </strong>{' '}
+              dollars. Additionally, I&apos;ve developed custom sections,
+              snippets, themes, and pages that improve the overall user
+              interface and experience, resulting in increased conversions.
             </ListItem>
             <ListItem title="Tailwind CSS">
               I have successfully used Tailwind to improve e-commerce
@@ -165,6 +169,14 @@ function Skills() {
               to personal and client projects.
             </ListItem>
           </List>
+        </div>
+        <div className="mt-10 flex flex-col items-center">
+          <Link
+            href="/process"
+            className="mt-5 w-5/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan sm:w-3/6 md:w-2/6 xl:w-1/6"
+          >
+            Learn My Process
+          </Link>
         </div>
       </Container>
     </>
@@ -190,7 +202,7 @@ function CaseStudies({ caseStudies }) {
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {caseStudies.map((caseStudy) => (
             <FadeIn key={caseStudy.href} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
+              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-sky transition hover:bg-neutral-50 sm:p-8">
                 <h3>
                   <Link href={caseStudy.href}>
                     <span className="absolute inset-0 rounded-3xl" />
