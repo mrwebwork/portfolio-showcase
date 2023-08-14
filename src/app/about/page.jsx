@@ -9,7 +9,7 @@ import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 function Culture() {
   return (
-    <div className="mx-5 mt-24 rounded-4xl bg-blue py-24 sm:mt-32 lg:py-32">
+    <div className="mx-5 mt-24 rounded-large bg-blue py-24 sm:mt-32 lg:py-32">
       <SectionIntro
         eyebrow="My Philosophy"
         title="Aligning Excellence, Balance, and Passion"
