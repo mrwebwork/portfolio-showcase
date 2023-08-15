@@ -241,7 +241,7 @@ function CaseStudies({ caseStudies }) {
 export const metadata = {
   title: 'Allan Hillman - Front-End Engineer',
   description:
-    'As a passionate freelance web developer and team leader in Austin, TX, I specialize in creating intuitive web designs that transform ideas into engaging and interactive web experiences. Let me bring your vision to life with my expertise in code and design.',
+    'Crafting the web, one line at a time. Based in Austin, TX, I specialize in creating intuitive web designs that turn ideas into interactive experiences.',
 }
 
 export default async function Home() {
