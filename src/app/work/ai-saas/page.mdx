@@ -1,0 +1,72 @@
+import logo from '@/images/projects/spotify-clone/spotify-logo.webp'
+import imageHero from './hero.png'
+
+import Link from 'next/link'
+
+export const caseStudy = {
+  client: 'AI SaaS',
+  title: 'Innovative AI Software',
+  description: 'AI Software as a Service',
+  summary: [
+    'AI Software',
+    'Architected using Next.js, React, Tailwind CSS and AI',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-07',
+  service: 'AI Products',
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Project`,
+  description: caseStudy.description,
+}
+
+<h1 className="text-3xl font-bold">Overview</h1>
+
+<p className="py-6 text-lg">
+  Built with Next.js and React, the application ensures a seamless, single-page
+  experience.
+</p>
+<p className="pb-6 text-lg">For authentication</p>
+<p className="pb-6 text-lg">
+  The application also integrates with Stripe, enabling premium subscriptions
+  within the platform.
+</p>
+<p className="pb-6 text-lg">
+  Key features include efficient song upload management, creation and management
+  of playlists, favoriting songs, and an interactive music player.
+</p>
+<p className="pb-6 text-lg">
+  Data fetching in server React components directly accesses the database,
+  eliminating the need for an API.
+</p>
+
+<h2 className="pt-6 text-2xl font-bold">Technologies Used</h2>
+
+<TagList>
+  <TagListItem>Stripe Checkout</TagListItem>
+  <TagListItem>React.js</TagListItem>
+  <TagListItem>Next.js</TagListItem>
+  <TagListItem>Tailwind CSS</TagListItem>
+  <TagListItem>React Toast</TagListItem>
+</TagList>
+
+<div className="flex flex-col items-center">
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://spotify-sigma-six.vercel.app/"
+    className="mt-5 w-5/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan md:w-3/6"
+  >
+    Start Building
+  </Link>
+  <Link
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://github.com/mrwebwork/spotify"
+    className="mt-5 w-5/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan md:w-3/6"
+  >
+    View Code
+  </Link>
+</div>
