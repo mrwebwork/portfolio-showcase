@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 // import { Logo } from '@/components/Logo'
-import { socialMediaProfiles } from '@/components/SocialMedia'
+import { SocialMedia, socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
   {
@@ -32,11 +32,11 @@ const navigation = [
       { title: 'Contact', href: '/contact' },
     ],
   },
-  {
-    title: 'Connect',
-    links: socialMediaProfiles,
-    social: true,
-  },
+  // {
+  //   title: 'Connect',
+  //   links: socialMediaProfiles,
+  //   social: true,
+  // },
 ]
 
 function Navigation() {
@@ -50,58 +50,38 @@ function Navigation() {
   // )
   return (
     <nav>
-      <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
-        {navigation.map((section) =>
-          section?.social ? (
-            // (console.log(section),
-            // (console.log(section?.social),
-            //**** Social Media Links ****//
-            <>
-              <li key={section.title}>
-                <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-                  {section.title}
-                </div>
-                <ul role="list" className="mt-4 text-sm text-neutral-700">
-                  {section.links.map((link) => (
-                    <li key={link.title} className="mt-4">
-                      <Link
-                        key={link.title}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href={link.href}
-                        className="transition hover:text-neutral-950"
-                      >
-                        {link.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            </>
-          ) : (
-            //****  Regular Nav Links ****//
-            <>
-              <li key={section.title}>
-                <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-                  {section.title}
-                </div>
-                <ul role="list" className="mt-4 text-sm text-neutral-700">
-                  {section.links.map((link) => (
-                    <li key={link.title} className="mt-4">
-                      <Link
-                        key={link.title}
-                        href={link.href}
-                        className="transition hover:text-neutral-950"
-                      >
-                        {link.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            </>
-          )
-        )}
+      <ul
+        role="list"
+        className="mx-auto grid max-w-3xl grid-cols-2 gap-2 sm:grid-cols-3"
+      >
+        {navigation.map((section) => (
+          //****  Regular Nav Links ****//
+          <>
+            <li key={section.title}>
+              <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+                {section.title}
+              </div>
+              <ul role="list" className="mt-4 text-sm text-neutral-700">
+                {section.links.map((link) => (
+                  <li key={link.title} className="mt-4">
+                    <Link
+                      key={link.title}
+                      href={link.href}
+                      className="transition hover:text-neutral-950"
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          </>
+        ))}
+        {/**** Social Media Links *****/}
+        <div class="font-display mr-5 space-y-4 text-sm font-semibold tracking-wider text-neutral-950">
+          <span className="">Connect</span>
+          <SocialMedia />
+        </div>
       </ul>
     </nav>
   )
