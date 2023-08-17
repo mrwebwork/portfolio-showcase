@@ -170,10 +170,11 @@ function Skills() {
             </ListItem>
           </List>
         </div>
-        <div className="mt-10 flex flex-col items-center">
+        {/* Process Button */}
+        <div className="flex flex-col items-center">
           <Link
             href="/process"
-            className="mt-5 w-5/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan sm:w-3/6 md:w-2/6 xl:w-1/6"
+            className="mt-5 w-3/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan sm:w-2/6"
           >
             Learn My Process
           </Link>
@@ -233,6 +234,15 @@ function CaseStudies({ caseStudies }) {
             </FadeIn>
           ))}
         </FadeInStagger>
+        {/* Projects Button */}
+        <div className="flex flex-col items-center">
+          <Link
+            href="/work"
+            className="mt-5 w-3/6 rounded-full bg-blue py-2 text-center font-semibold text-white transition hover:bg-cyan sm:w-2/6"
+          >
+            View Projects
+          </Link>
+        </div>
       </Container>
     </>
   )
