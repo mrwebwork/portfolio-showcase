@@ -52,7 +52,7 @@ function Discover() {
           I work closely with my clients to understand their{' '}
           <strong className="font-semibold text-neutral-950">needs</strong> and{' '}
           <strong className="font-semibold text-neutral-950">goals</strong>,
-          embedding myself into their every day operations to understand their
+          embedding myself into their everyday operations to understand their
           business from the inside out.
         </p>
         <p>
@@ -61,7 +61,7 @@ function Discover() {
           <strong className="font-semibold text-neutral-950">
             exceed them
           </strong>
-          . This stage includes a detailed timeline, estimated budget, and a
+          . This stage includes a detailed timeline, an estimated budget, and a
           comprehensive list of deliverables designed for maximum efficiency and
           effectiveness.
         </p>
@@ -152,8 +152,8 @@ function Deliver() {
       <List className="mt-8">
         <ListItem title="QA Testing">
           <p className="pt-3">
-            More testing done on website to find any bugs or anything looked
-            over.
+            More testing was done on the website to find any bugs or anything
+            looked over.
           </p>
         </ListItem>
         <ListItem title="Production">
@@ -165,7 +165,7 @@ function Deliver() {
         <ListItem title="Support">
           <p className="pt-3">
             I will be here to support you and your website in the future, this
-            is more then just building a website this is a partnership.
+            is more than just building a website this is a partnership.
           </p>
         </ListItem>
       </List>

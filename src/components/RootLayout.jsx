@@ -134,12 +134,12 @@ function NavigationItem({ href, children }) {
 
 const navigationItems = [
   [
-    { label: 'My Projects', href: '/work' },
+    { label: 'Projects', href: '/work' },
     { label: 'About Me', href: '/about' },
   ],
   [
     { label: 'Blogs', href: '/blog' },
-    { label: 'My Process', href: '/process' },
+    { label: 'Process', href: '/process' },
   ],
   [
     { label: 'Resume', href: pdfResume },
