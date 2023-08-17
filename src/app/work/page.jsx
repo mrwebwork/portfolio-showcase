@@ -85,14 +85,7 @@ function CaseStudies({ caseStudies }) {
 
 //* Clients Code Below
 // const clients = [
-//   ['Phobia'],
-//   ['Family Fund'],
-//   ['Unseal'],
-//   ['Mail Smirk'],
-//   ['Home Work'],
-//   ['Green Life'],
-//   ['Bright Path'],
-//   ['North Adventures'],
+//   ['Montauk Group'],
 // ]
 
 // function Clients() {
@@ -100,7 +93,7 @@ function CaseStudies({ caseStudies }) {
 //     <Container className="mt-24 sm:mt-32 lg:mt-40">
 //       <FadeIn>
 //         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-//           You’re in good company
+//           You’re in excellent company look at some of my clients
 //         </h2>
 //       </FadeIn>
 //       <FadeInStagger className="mt-10" faster>
