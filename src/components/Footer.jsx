@@ -52,7 +52,7 @@ function Navigation() {
     <nav>
       <ul
         role="list"
-        className="mx-auto grid max-w-3xl grid-cols-2 gap-2 sm:grid-cols-3"
+        className="mx-auto grid max-w-3xl grid-cols-2 gap-10 sm:grid-cols-3 sm:gap-2"
       >
         {navigation.map((section) => (
           //****  Regular Nav Links ****//
@@ -77,9 +77,9 @@ function Navigation() {
             </li>
           </>
         ))}
-        {/**** Social Media Links *****/}
+        {/**** //* Social Media Links *****/}
         <div class="font-display mr-5 space-y-4 text-sm font-semibold tracking-wider text-neutral-950">
-          <span className="">Connect</span>
+          <span>Connect</span>
           <SocialMedia />
         </div>
       </ul>
