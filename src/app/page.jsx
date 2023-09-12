@@ -8,21 +8,24 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import { StatList, StatListItem } from '@/components/StatList'
-import { Button } from '@/components/Button'
 
 import imageCoder from '@/images/home/coder.jpg'
 
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 const clients = [
-  ['Montauk Group', 'https://shopthemontaukgroup.com/'],
+  ['Era Fine Jewelry', 'https://erafinejewelry.com/'],
+  ['Luxsone', 'https://luxsone.com/'],
   ['Yas Mena Cycles', 'https://yascycles.com/'],
-  ['Frontline Optics', 'https://frontline-optics.com/'],
+  ['City Tins', 'https://citytins.com/'],
+  ['The Montauk Group', 'https://shopthemontaukgroup.com/'],
   ['Together Beverages', 'https://togetherbeverages.com/'],
+  ['Frontline Optics', 'https://frontline-optics.com/'],
   ['TŌNEM', 'https://puretonetherapy.com/'],
-  // ['Luxsone', 'https://luxsone.com/'],
-  ['UHRD Music', 'https://uhrdshop.com/'],
-  ['VNC Sales & Marketing', 'https://vncsales.com/'],
+  // ['Retsgarden', 'https://retsgarden.com/'],
+
+  // ['UHRD Music', 'https://uhrdshop.com/'],
+  // ['VNC Sales & Marketing', 'https://vncsales.com/'],
 ]
 
 function Clients() {
@@ -31,7 +34,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center text-xl font-semibold text-white sm:text-left lg:text-2xl">
-            I have worked with dozens of amazing companies worldwide
+            Working with amazing companies worldwide
           </h2>
           <div className="h-px flex-auto bg-sky" />
         </FadeIn>
