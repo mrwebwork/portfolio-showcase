@@ -14,7 +14,10 @@ import imageCoder from '@/images/home/coder.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 const clients = [
-  ['Era Fine Jewelry', 'https://erafinejewelry.com/'],
+  [
+    'Era Fine Jewelry',
+    'https://erafinejewelry.com/pages/welcome-to-era-fine-jewelry',
+  ],
   ['Luxsone', 'https://luxsone.com/'],
   ['Yas Mena Cycles', 'https://yascycles.com/'],
   ['City Tins', 'https://citytins.com/'],
