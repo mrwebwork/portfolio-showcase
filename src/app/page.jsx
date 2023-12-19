@@ -145,7 +145,7 @@ function Skills() {
               significantly enhanced the interactivity of the site.
             </ListItem>
             <ListItem title="Shopify Plus">
-              Over the past 5 years, I&apos;ve had the pleasure of working with
+              Over the past 6 years, I&apos;ve had the pleasure of working with
               numerous clients and building over 100 Shopify stores. One of my
               standout accomplishments was successfully{' '}
               <strong className="font-semibold text-neutral-950">
@@ -286,10 +286,10 @@ export default async function Home() {
       <Clients />
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="50+" label="Projects Completed" />
-          <StatListItem value="28" label="Technologies Used" />
           <StatListItem value="95%" label="Repeat Client Rate" />
+          <StatListItem value="50+" label="Projects Completed" />
           <StatListItem value="99%" label="Client Satisfaction" />
+          <StatListItem value="30+" label="Technologies Used" />
         </StatList>
       </Container>
 

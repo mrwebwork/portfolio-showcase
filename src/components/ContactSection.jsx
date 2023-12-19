@@ -13,14 +13,20 @@ export function ContactSection() {
             </h2>
             <div className="mt-6 flex">
               <Button href="/contact" invert>
-                Get in Touch
+                Socials
               </Button>
             </div>
             <div className="mt-10 border-t border-white/10 pt-10">
-            <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-              Connect on Fiverr
-            </h2>
-              <Button className="mt-6" href="https://www.fiverr.com/allanhillman" invert>View Services</Button>
+              <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
+                Connect on Fiverr
+              </h2>
+              <Button
+                className="mt-6"
+                href="https://www.fiverr.com/allanhillman"
+                invert
+              >
+                View Services
+              </Button>
             </div>
           </div>
         </div>

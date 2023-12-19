@@ -51,7 +51,10 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About me" title="My strength is collaboration">
+      <PageIntro
+        eyebrow="Meet Allan Hillman"
+        title="My strength is collaboration"
+      >
         <p>
           Working in synergy with cross-functional teams has always enabled me
           to achieve the best results.
@@ -75,8 +78,8 @@ export default async function About() {
       <Container className="mt-16">
         <StatList>
           <StatListItem value="6" label="Years of Experience" />
-          <StatListItem value="1M+" label="Top Website Views" />
-          <StatListItem value="40" label="Code Sprints Led" />
+          <StatListItem value="1.75M" label="Unique Website Views" />
+          <StatListItem value="50+" label="Code Sprints Led" />
           <StatListItem value="4" label="CMS Platforms Used" />
         </StatList>
       </Container>

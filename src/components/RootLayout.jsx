@@ -23,7 +23,7 @@ import { GridPattern } from '@/components/GridPattern'
 // import { Logo, Logomark } from "@/components/Logo";
 import { SocialMedia } from '@/components/SocialMedia'
 
-const pdfResume = '/Allan_Hillman_Resume.pdf'
+const pdfResume = '/Allan-Hillman-Front-End-Web-Engineer-Resume.pdf'
 
 const RootLayoutContext = createContext({})
 
@@ -134,16 +134,16 @@ function NavigationItem({ href, children }) {
 
 const navigationItems = [
   [
-    { label: 'Projects', href: '/work' },
+    { label: 'My Projects', href: '/work' },
     { label: 'About Me', href: '/about' },
   ],
   [
     { label: 'Blogs', href: '/blog' },
-    { label: 'Process', href: '/process' },
+    { label: 'The Process', href: '/process' },
   ],
   [
     { label: 'Resume', href: pdfResume },
-    { label: 'Contact Me', href: '/contact' },
+    { label: 'Get in Touch', href: '/contact' },
   ],
 ]
 

@@ -4,17 +4,16 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import clsx from 'clsx'
+import '@/styles/tailwind.css'
 
 import { Montserrat } from 'next/font/google'
-
-import '@/styles/tailwind.css'
 
 const mont = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Allan Hillman',
   description:
-    "I apply my passion for coding and strategic thinking to transform complex problems into intuitive websites and user interfaces. My skills extend beyond development, aligning with a digital architect's role, and converting abstract ideas into interactive experiences.",
+    'Passionate Front-End Web Engineer at Deloitte. Creating engaging AI apps using HTML, CSS, JS, TypeScript and React.js for flawless web experiences.',
 }
 
 export default function Layout({ children }) {
@@ -24,8 +23,8 @@ export default function Layout({ children }) {
         <RootLayout>
           {children}
           <SpeedInsights />
+          <Analytics />
         </RootLayout>
-        <Analytics />
       </body>
     </html>
   )
