@@ -80,6 +80,14 @@
         "async": false
       }
     },
+    "(app-client)/./src/components/RootLayout.jsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/RootLayout.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js": {
       "*": {
         "id": "(sc_client)/./node_modules/@vercel/analytics/dist/react/index.js",
@@ -91,14 +99,6 @@
     "(app-client)/./node_modules/@vercel/speed-insights/dist/next/index.mjs": {
       "*": {
         "id": "(sc_client)/./node_modules/@vercel/speed-insights/dist/next/index.mjs",
-        "name": "*",
-        "chunks": [],
-        "async": false
-      }
-    },
-    "(app-client)/./src/components/RootLayout.jsx": {
-      "*": {
-        "id": "(sc_client)/./src/components/RootLayout.jsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -243,16 +243,8 @@
       ],
       "async": false
     },
-    "/Users/allanhillman/Documents/GitHub/portfolio-showcase/node_modules/@vercel/analytics/dist/react/index.js": {
-      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/allanhillman/Documents/GitHub/portfolio-showcase/node_modules/@vercel/speed-insights/dist/next/index.mjs": {
-      "id": "(app-client)/./node_modules/@vercel/speed-insights/dist/next/index.mjs",
+    "/Users/allanhillman/Documents/GitHub/portfolio-showcase/src/components/RootLayout.jsx": {
+      "id": "(app-client)/./src/components/RootLayout.jsx",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
@@ -267,16 +259,24 @@
       ],
       "async": false
     },
-    "/Users/allanhillman/Documents/GitHub/portfolio-showcase/src/components/RootLayout.jsx": {
-      "id": "(app-client)/./src/components/RootLayout.jsx",
+    "/Users/allanhillman/Documents/GitHub/portfolio-showcase/src/styles/tailwind.css": {
+      "id": "(app-client)/./src/styles/tailwind.css",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
-    "/Users/allanhillman/Documents/GitHub/portfolio-showcase/src/styles/tailwind.css": {
-      "id": "(app-client)/./src/styles/tailwind.css",
+    "/Users/allanhillman/Documents/GitHub/portfolio-showcase/node_modules/@vercel/analytics/dist/react/index.js": {
+      "id": "(app-client)/./node_modules/@vercel/analytics/dist/react/index.js",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/allanhillman/Documents/GitHub/portfolio-showcase/node_modules/@vercel/speed-insights/dist/next/index.mjs": {
+      "id": "(app-client)/./node_modules/@vercel/speed-insights/dist/next/index.mjs",
       "name": "*",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
