@@ -69,7 +69,7 @@ function ContactDetails() {
     <FadeIn>
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Email Me
+          Email
         </h2>
         {/* TODO Fix this */}
         {/* *infinite loop* */}
@@ -77,7 +77,12 @@ function ContactDetails() {
           {[['tech@allanswebwork.info']].map(([email]) => (
             <div key={email}>
               <dd>
-                <h1 className="text-neutral-60">{email}</h1>
+                <a
+                  className="text-lg font-bold hover:text-blue"
+                  href="mailto:`${email}`"
+                >
+                  {email}
+                </a>
               </dd>
             </div>
           ))}
@@ -86,7 +91,7 @@ function ContactDetails() {
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Get In Touch
+          Socials
         </h2>
         <SocialMedia className="mt-6" />
       </Border>
@@ -117,7 +122,7 @@ export default function Contact() {
   // const Contact = widthContactIntro(PageIntro, 'mt-0')
   return (
     <>
-      <PageIntro eyebrow="Contact Me" title="Start The Conversation">
+      <PageIntro eyebrow="Let's Connect!" title="Start The Conversation">
         <p>Looking forward to crafting your unique web experience.</p>
       </PageIntro>
 

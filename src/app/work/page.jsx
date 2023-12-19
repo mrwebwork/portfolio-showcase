@@ -129,7 +129,7 @@ export default async function Work() {
   return (
     <>
       <PageIntro
-        eyebrow="Explore My Creations"
+        eyebrow="Explore The Creations"
         title="Transforming Ideas Into Impactful Solutions"
       >
         <p>Take a look at some of my latest work</p>
