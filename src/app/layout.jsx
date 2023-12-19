@@ -1,7 +1,7 @@
 import { RootLayout } from '@/components/RootLayout'
 
 import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import clsx from 'clsx'
 
@@ -21,8 +21,10 @@ export default function Layout({ children }) {
   return (
     <html lang="en" className="h-full bg-blue text-base antialiased">
       <body className={clsx('mt-2 flex min-h-full flex-col', mont.className)}>
-        <RootLayout>{children}</RootLayout>
-        <SpeedInsights />
+        <RootLayout>
+          {children}
+          <SpeedInsights />
+        </RootLayout>
         <Analytics />
       </body>
     </html>
