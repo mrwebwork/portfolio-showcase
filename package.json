@@ -26,6 +26,7 @@
     "focus-visible": "^5.2.0",
     "framer-motion": "^10.12.16",
     "next": "13.4.9",
+    "npm": "^10.3.0",
     "postcss-focus-visible": "^6.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",

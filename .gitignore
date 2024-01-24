@@ -1,0 +1,32 @@
+# Dependency directories
+node_modules
+
+# Next.js build output
+.next
+
+# dotenv environment variables file
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE - VSCode
+.vscode
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Public folder generated files
+public/sw.js
+public/workbox-*.js
+
+# Ignore built storybook static files
+storybook-static/
+
+# Ignore Tailwind CSS output file (if you're using JIT mode and generating the file on each build)
+src/styles/tailwind.output.css
