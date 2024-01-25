@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import imageCoder from '@/images/home/coder.jpg'
+import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
+
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
@@ -9,16 +12,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import { StatList, StatListItem } from '@/components/StatList'
 
-import imageCoder from '@/images/home/coder.jpg'
-
-import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
-
 const clients = [
-  /*** [
-    'Era Fine Jewelry',
-    'https://erafinejewelry.com/pages/welcome-to-era-fine-jewelry',
-  ], ***/
-  ['Luxsone', 'https://luxsone.com/'],
   ['Yas Mena Cycles', 'https://yascycles.com/'],
   ['City Tins', 'https://citytins.com/'],
   ['The Montauk Group', 'https://shopthemontaukgroup.com/'],
@@ -26,9 +20,8 @@ const clients = [
   ['Frontline Optics', 'https://frontline-optics.com/'],
   ['TŌNEM', 'https://puretonetherapy.com/'],
   // ['Retsgarden', 'https://retsgarden.com/'],
-
-  // ['UHRD Music', 'https://uhrdshop.com/'],
-  // ['VNC Sales & Marketing', 'https://vncsales.com/'],
+  ['UHRD Music', 'https://uhrdshop.com/'],
+  ['VNC Sales & Marketing', 'https://vncsales.com/'],
 ]
 
 function Clients() {
@@ -37,16 +30,16 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center text-xl font-semibold text-white sm:text-left lg:text-2xl">
-            Working with amazing companies worldwide
+            Working with amazing clients & businesses worldwide
           </h2>
           <div className="h-px flex-auto bg-sky" />
         </FadeIn>
         <FadeInStagger faster>
           <ul
             role="list"
-            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4"
+            className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-3"
           >
-            {/* Add logo as a parameter when adding images of companies */}
+            {/* //* Add logo as a parameter when adding images of companies */}
             {clients.map(([client, url]) => (
               <li key={client}>
                 <FadeIn>
@@ -59,7 +52,7 @@ function Clients() {
                   >
                     {client}
                   </Link>
-                  {/* <Image src={logo} alt={client} unoptimized /> */}
+                  {/*//? <Image src={logo} alt={client} unoptimized /> */}
                 </FadeIn>
               </li>
             ))}
